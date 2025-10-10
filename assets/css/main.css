@@ -1,0 +1,216 @@
+/* ============================
+   RESET & BASE STYLES
+   ============================ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ============================
+   BACKGROUND SLIDESHOW
+   ============================ */
+.slideshow-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transform: scale(1);
+  transition: opacity 1.5s ease-in-out, transform 3s ease-out;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+/* ============================
+   TOP NAVIGATION BAR
+   ============================ */
+.top-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 1rem 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  transition: opacity 0.3s ease;
+}
+
+.logo a:hover {
+  opacity: 0.8;
+}
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 1.25rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
+
+/* Font Awesome Social Media Icons */
+.icon-instagram::before {
+  font-family: "Font Awesome 6 Brands";
+  content: "\f16d";
+  font-style: normal;
+}
+.icon-linkedin::before {
+  font-family: "Font Awesome 6 Brands";
+  content: "\f0e1";
+  font-style: normal;
+}
+.icon-email::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\f0e0";
+  font-weight: 900;
+  font-style: normal;
+}
+.icon-twitter::before {
+  font-family: "Font Awesome 6 Brands";
+  content: "\f099";
+  font-style: normal;
+}
+.icon-facebook::before {
+  font-family: "Font Awesome 6 Brands";
+  content: "\f39e";
+  font-style: normal;
+}
+.icon-github::before {
+  font-family: "Font Awesome 6 Brands";
+  content: "\f09b";
+  font-style: normal;
+}
+.icon-youtube::before {
+  font-family: "Font Awesome 6 Brands";
+  content: "\f167";
+  font-style: normal;
+}
+
+/* Individual icon colors (use brand colors) */
+.icon-instagram::before { color: #E4405F; }
+.icon-linkedin::before { color: #0077B5; }
+.icon-email::before { color: #EA4335; }
+.icon-twitter::before { color: #1DA1F2; }
+.icon-facebook::before { color: #1877F2; }
+.icon-github::before { color: #ffffff; }
+.icon-youtube::before { color: #FF0000; }
+
+/* Hover colors - slightly lighter */
+.social-link:hover .icon-instagram::before { color: #F56476; }
+.social-link:hover .icon-linkedin::before { color: #0A8CD2; }
+.social-link:hover .icon-email::before { color: #F4685E; }
+.social-link:hover .icon-twitter::before { color: #4AB3F4; }
+.social-link:hover .icon-facebook::before { color: #4192F7; }
+.social-link:hover .icon-github::before { color: #f0f0f0; }
+.social-link:hover .icon-youtube::before { color: #FF3333; }
+
+/* ============================
+   MAIN CONTENT
+   ============================ */
+.main-content {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 6rem 2rem 2rem;
+}
+
+.hero-content h1 {
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
+  line-height: 1.1;
+}
+
+.hero-content .tagline {
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 300;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+  margin-bottom: 2rem;
+}
+
+/* ============================
+   RESPONSIVE
+   ============================ */
+@media (max-width: 768px) {
+  .nav-container {
+    padding: 0 1rem;
+  }
+
+  .logo a {
+    font-size: 1.25rem;
+  }
+
+  .social-links {
+    gap: 1rem;
+  }
+
+  .social-link {
+    font-size: 1rem;
+  }
+}
