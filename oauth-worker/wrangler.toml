@@ -1,0 +1,5 @@
+name = "lmu-es-cms-auth"
+main = "index.js"
+compatibility_date = "2024-01-01"
+
+# This will be deployed to: https://lmu-es-cms-auth.<your-subdomain>.workers.dev
