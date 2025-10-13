@@ -100,13 +100,28 @@ body {
 .social-link {
   color: #fff;
   font-size: 1.25rem;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, color 0.3s ease, opacity 0.3s ease;
   text-decoration: none;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-link:hover {
   transform: translateY(-2px);
+  opacity: 0.8;
+}
+
+.social-icon-image {
+  display: block;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-link:hover .social-icon-image {
+  transform: scale(1.1);
 }
 
 /* Font Awesome Social Media Icons */
