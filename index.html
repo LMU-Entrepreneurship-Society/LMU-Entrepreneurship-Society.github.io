@@ -44,44 +44,67 @@
   </div>
 
   <!-- Top Navigation Bar -->
-  <nav class="top-nav">
+  <nav class="top-nav" id="topNav">
     <div class="nav-container">
-      <div class="logo">
-        <a href="/">LMU Entrepreneurship Society</a>
-      </div>
-      <div class="social-links">
-        
-        <a href="https://instagram.com/lmu.es" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram" >
-          
-            <i class="icon-instagram"></i>
-          
-        </a>
-        
-        <a href="https://www.linkedin.com/company/lmu-entrepreneurship-society/posts/?feedView=all" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn" >
-          
-            <i class="icon-linkedin"></i>
-          
-        </a>
-        
-        <a href="mailto:lmuentrepreneurshipsociety@gmail.com" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Email" >
-          
-            <i class="icon-email"></i>
-          
-        </a>
-        
-      </div>
+      <a href="/" class="nav-logo">
+        <img src="/assets/images/logo-transparent.png" alt="Logo" class="logo-image">
+      </a>
+      <a href="/" class="nav-title" id="navTitle">
+        LMU Entrepreneurship Society
+      </a>
     </div>
   </nav>
 
   <!-- Main Content -->
   <main class="main-content">
     <div class="hero-content">
-  <h1>LMU Entrepreneurship Society</h1>
+  <h1 id="typewriter-title">LMU Entrepreneurship Society</h1>
   <p class="tagline">Empowering Student Entrepreneurs</p>
 </div>
 
   </main>
 
+  <!-- Action Buttons Section -->
+  <section class="action-buttons-section" id="actionButtonsSection">
+    <div class="action-buttons-container">
+      
+      <a href="#" class="action-button" data-action="join" data-preview="/assets/images/slide1.jpg">
+        <i class="fas fa-users"></i>
+        Join Our Community
+      </a>
+      
+      <a href="#" class="action-button" data-action="events" data-preview="/assets/images/slide2.jpg">
+        <i class="fas fa-calendar"></i>
+        Upcoming Events
+      </a>
+      
+      <a href="#" class="action-button" data-action="resources" data-preview="/assets/images/slide1.jpg">
+        <i class="fas fa-book"></i>
+        Startup Resources
+      </a>
+      
+      <a href="#" class="action-button" data-action="mentorship" data-preview="/assets/images/slide2.jpg">
+        <i class="fas fa-handshake"></i>
+        Mentorship Program
+      </a>
+      
+      <a href="#" class="action-button" data-action="stories" data-preview="/assets/images/slide1.jpg">
+        <i class="fas fa-star"></i>
+        Success Stories
+      </a>
+      
+      <a href="#" class="action-button" data-action="contact" data-preview="/assets/images/slide2.jpg">
+        <i class="fas fa-envelope"></i>
+        Contact Us
+      </a>
+      
+    </div>
+    <div class="preview-image-container">
+      <div class="preview-image" id="previewImage"></div>
+    </div>
+  </section>
+
   <script src="/assets/js/slideshow.js"></script>
+  <script src="/assets/js/menu.js"></script>
 </body>
 </html>
