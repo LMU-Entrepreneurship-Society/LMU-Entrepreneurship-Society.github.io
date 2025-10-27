@@ -54,5 +54,6 @@ collections:
         widget: "list"
         allow_add: true
         fields:
-          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Desktop Image", name: "image", widget: "image" }
+          - { label: "Mobile Image", name: "mobile_image", widget: "image", required: false, hint: "Optional mobile-optimized version" }
           - { label: "Alt Text", name: "alt", widget: "string" }
