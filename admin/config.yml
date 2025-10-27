@@ -25,15 +25,6 @@ collections:
           - { label: "Site Title", name: "site_title", widget: "string" }
           - { label: "Tagline", name: "tagline", widget: "string" }
           - { label: "Slideshow Transition Speed (ms)", name: "slideshow_transition_speed", widget: "number", default: 3000, value_type: "int" }
-          - label: "Social Links"
-            name: "social_links"
-            widget: "list"
-            fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
-              - { label: "Custom Icon Image", name: "icon_image", widget: "image", required: false, hint: "Upload a custom icon (PNG, SVG, or JPG). If not provided, will use Font Awesome icon." }
-              - { label: "Icon Type (Font Awesome fallback)", name: "icon", widget: "select", options: ["instagram", "linkedin", "email", "twitter", "facebook", "github", "youtube"], required: false }
-              - { label: "Icon Size (pixels)", name: "icon_size", widget: "number", default: 24, value_type: "int", min: 16, max: 64, hint: "Size of the icon in pixels (16-64)" }
           - label: "Action Buttons"
             name: "action_buttons"
             widget: "list"

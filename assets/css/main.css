@@ -406,6 +406,10 @@ body {
     text-align: center;
     line-height: 1.2;
     word-wrap: break-word;
+    padding: 0 1rem;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    hyphens: auto;
   }
 
   .social-links {
