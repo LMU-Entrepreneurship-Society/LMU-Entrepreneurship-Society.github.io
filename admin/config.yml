@@ -55,196 +55,196 @@ collections:
           - { label: "Mobile Image", name: "mobile_image", widget: "image", required: false, hint: "Upload to assets/images/mobile/ folder (optional)" }
           - { label: "Alt Text", name: "alt", widget: "string" }
 
-  # Calendar Page
-  - name: "calendar_page"
-    label: "📅 Calendar Page"
-    file: "calendar-content.md"
-    fields:
-      - { label: "Page Title", name: "page_title", widget: "string" }
-      
-      - label: "Hero Section"
-        name: "hero"
-        widget: "object"
-        fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - { label: "Main Heading", name: "heading", widget: "string" }
-          - { label: "Description Text", name: "description", widget: "text" }
-      
-      - label: "Calendar Section"
+  # Page Content
+  - name: "pages"
+    label: "Page Content"
+    files:
+      - label: "📅 Calendar Page"
         name: "calendar"
-        widget: "object"
+        file: "_data/calendar_page.yml"
         fields:
-          - { label: "Show Calendar", name: "enabled", widget: "boolean", default: true }
-          - { label: "Calendar Embed URL", name: "calendar_embed_url", widget: "string", hint: "Google Calendar embed URL" }
-      
-      - label: "Subscribe Section"
-        name: "subscribe"
-        widget: "object"
-        fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - { label: "Section Heading", name: "heading", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Button Text", name: "button_text", widget: "string" }
-          - { label: "Google Calendar URL", name: "google_calendar_url", widget: "string" }
-          - { label: "Apple Calendar URL", name: "apple_calendar_url", widget: "string" }
-
-  # How to Join Page
-  - name: "join_page"
-    label: "🚀 How to Join Page"
-    file: "join-content.md"
-    fields:
-      - { label: "Page Title", name: "page_title", widget: "string" }
-      
-      - label: "Hero Section"
-        name: "hero"
-        widget: "object"
-        fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - { label: "Main Heading", name: "heading", widget: "string" }
-          - { label: "Description Text", name: "description", widget: "text" }
-      
-      - label: "Steps Section"
-        name: "steps"
-        widget: "object"
-        fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - label: "Steps"
-            name: "steps"
-            widget: "list"
-            allow_add: true
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
             fields:
-              - { label: "Step Number", name: "step_number", widget: "number", value_type: "int" }
-              - { label: "Icon/Emoji", name: "icon", widget: "string" }
-              - { label: "Step Title", name: "title", widget: "string" }
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - { label: "Main Heading", name: "heading", widget: "string" }
+              - { label: "Description Text", name: "description", widget: "text" }
+          
+          - label: "Calendar Section"
+            name: "calendar"
+            widget: "object"
+            fields:
+              - { label: "Show Calendar", name: "enabled", widget: "boolean", default: true }
+              - { label: "Calendar Embed URL", name: "calendar_embed_url", widget: "string", hint: "Google Calendar embed URL" }
+          
+          - label: "Subscribe Section"
+            name: "subscribe"
+            widget: "object"
+            fields:
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - { label: "Section Heading", name: "heading", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
               - { label: "Button Text", name: "button_text", widget: "string" }
-              - { label: "Button URL", name: "button_url", widget: "string" }
-              - { label: "Button Color", name: "button_color", widget: "string", hint: "CSS gradient or color" }
-      
-      - label: "Benefits Section"
-        name: "benefits"
-        widget: "object"
-        fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - { label: "Section Heading", name: "heading", widget: "string" }
-          - label: "Benefits"
-            name: "items"
-            widget: "list"
-            allow_add: true
-            fields:
-              - { label: "Icon/Emoji", name: "icon", widget: "string" }
-              - { label: "Benefit Title", name: "title", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-      
-      - label: "Contact Section"
-        name: "contact"
-        widget: "object"
-        fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - { label: "Section Heading", name: "heading", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Email Address", name: "email", widget: "string" }
+              - { label: "Google Calendar URL", name: "google_calendar_url", widget: "string" }
+              - { label: "Apple Calendar URL", name: "apple_calendar_url", widget: "string" }
 
-  # About Us Page
-  - name: "about_page"
-    label: "👥 About Us Page"
-    file: "about-content.md"
-    fields:
-      - { label: "Page Title", name: "page_title", widget: "string" }
-      
-      - label: "Mission Section"
-        name: "mission"
-        widget: "object"
+      - label: "🚀 How to Join Page"
+        name: "join"
+        file: "_data/join_page.yml"
         fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - { label: "Section Heading", name: "heading", widget: "string" }
-          - { label: "Mission Statement", name: "statement", widget: "text" }
-      
-      - label: "Executive Board Section"
-        name: "eboard"
-        widget: "object"
-        fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - { label: "Section Heading", name: "heading", widget: "string" }
-          - label: "Board Members"
-            name: "members"
-            widget: "list"
-            allow_add: true
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
             fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Position", name: "position", widget: "string" }
-              - { label: "Bio", name: "bio", widget: "text", required: false }
-              - { label: "Photo", name: "photo", widget: "image", required: false }
-              - { label: "Email", name: "email", widget: "string", required: false }
-              - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
-              - { label: "Card Gradient", name: "gradient", widget: "string", hint: "CSS gradient for card background" }
-      
-      - label: "Activities Section"
-        name: "activities"
-        widget: "object"
-        fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - { label: "Section Heading", name: "heading", widget: "string" }
-          - label: "Activities"
-            name: "items"
-            widget: "list"
-            allow_add: true
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - { label: "Main Heading", name: "heading", widget: "string" }
+              - { label: "Description Text", name: "description", widget: "text" }
+          
+          - label: "Steps Section"
+            name: "steps"
+            widget: "object"
             fields:
-              - { label: "Icon/Emoji", name: "icon", widget: "string" }
-              - { label: "Activity Title", name: "title", widget: "string" }
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - label: "Steps"
+                name: "steps"
+                widget: "list"
+                allow_add: true
+                fields:
+                  - { label: "Step Number", name: "step_number", widget: "number", value_type: "int" }
+                  - { label: "Icon/Emoji", name: "icon", widget: "string" }
+                  - { label: "Step Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Button Text", name: "button_text", widget: "string" }
+                  - { label: "Button URL", name: "button_url", widget: "string" }
+                  - { label: "Button Color", name: "button_color", widget: "string", hint: "CSS gradient or color" }
+          
+          - label: "Benefits Section"
+            name: "benefits"
+            widget: "object"
+            fields:
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - label: "Benefits"
+                name: "items"
+                widget: "list"
+                allow_add: true
+                fields:
+                  - { label: "Icon/Emoji", name: "icon", widget: "string" }
+                  - { label: "Benefit Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+          
+          - label: "Contact Section"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - { label: "Section Heading", name: "heading", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
-      
-      - label: "Contact Section"
-        name: "contact"
-        widget: "object"
-        fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - { label: "Section Heading", name: "heading", widget: "string" }
-          - { label: "Description", name: "description", widget: "text" }
-          - { label: "Email Address", name: "email", widget: "string" }
-          - { label: "Button Text", name: "button_text", widget: "string" }
+              - { label: "Email Address", name: "email", widget: "string" }
 
-  # Newsletter Page
-  - name: "newsletter_page"
-    label: "📬 Newsletter Page"
-    file: "newsletter-content.md"
-    fields:
-      - { label: "Page Title", name: "page_title", widget: "string" }
-      
-      - label: "Hero Section"
-        name: "hero"
-        widget: "object"
+      - label: "👥 About Us Page"
+        name: "about"
+        file: "_data/about_page.yml"
         fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - { label: "Main Heading", name: "heading", widget: "string" }
-          - { label: "Description Text", name: "description", widget: "text" }
-      
-      - label: "Benefits Section"
-        name: "benefits"
-        widget: "object"
-        fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - label: "Benefits"
-            name: "items"
-            widget: "list"
-            allow_add: true
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          
+          - label: "Mission Section"
+            name: "mission"
+            widget: "object"
             fields:
-              - { label: "Icon/Emoji", name: "icon", widget: "string" }
-              - { label: "Benefit Title", name: "title", widget: "string" }
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - { label: "Mission Statement", name: "statement", widget: "text" }
+          
+          - label: "Executive Board Section"
+            name: "eboard"
+            widget: "object"
+            fields:
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - label: "Board Members"
+                name: "members"
+                widget: "list"
+                allow_add: true
+                fields:
+                  - { label: "Name", name: "name", widget: "string" }
+                  - { label: "Position", name: "position", widget: "string" }
+                  - { label: "Bio", name: "bio", widget: "text", required: false }
+                  - { label: "Photo", name: "photo", widget: "image", required: false }
+                  - { label: "Email", name: "email", widget: "string", required: false }
+                  - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
+                  - { label: "Card Gradient", name: "gradient", widget: "string", hint: "CSS gradient for card background" }
+          
+          - label: "Activities Section"
+            name: "activities"
+            widget: "object"
+            fields:
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - { label: "Section Heading", name: "heading", widget: "string" }
+              - label: "Activities"
+                name: "items"
+                widget: "list"
+                allow_add: true
+                fields:
+                  - { label: "Icon/Emoji", name: "icon", widget: "string" }
+                  - { label: "Activity Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+          
+          - label: "Contact Section"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - { label: "Section Heading", name: "heading", widget: "string" }
               - { label: "Description", name: "description", widget: "text" }
-      
-      - label: "Form Section"
-        name: "form"
-        widget: "object"
+              - { label: "Email Address", name: "email", widget: "string" }
+              - { label: "Button Text", name: "button_text", widget: "string" }
+
+      - label: "📬 Newsletter Page"
+        name: "newsletter"
+        file: "_data/newsletter_page.yml"
         fields:
-          - { label: "Show Form", name: "enabled", widget: "boolean", default: true }
-          - { label: "Mailchimp Action URL", name: "mailchimp_action", widget: "string" }
-          - { label: "Form Title", name: "form_title", widget: "string" }
-      
-      - label: "Footer Section"
-        name: "footer"
-        widget: "object"
-        fields:
-          - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-          - { label: "Privacy Text", name: "privacy_text", widget: "string" }
-          - { label: "Frequency Text", name: "frequency_text", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string" }
+          
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - { label: "Main Heading", name: "heading", widget: "string" }
+              - { label: "Description Text", name: "description", widget: "text" }
+          
+          - label: "Benefits Section"
+            name: "benefits"
+            widget: "object"
+            fields:
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - label: "Benefits"
+                name: "items"
+                widget: "list"
+                allow_add: true
+                fields:
+                  - { label: "Icon/Emoji", name: "icon", widget: "string" }
+                  - { label: "Benefit Title", name: "title", widget: "string" }
+                  - { label: "Description", name: "description", widget: "text" }
+          
+          - label: "Form Section"
+            name: "form"
+            widget: "object"
+            fields:
+              - { label: "Show Form", name: "enabled", widget: "boolean", default: true }
+              - { label: "Mailchimp Action URL", name: "mailchimp_action", widget: "string" }
+              - { label: "Form Title", name: "form_title", widget: "string" }
+          
+          - label: "Footer Section"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
+              - { label: "Privacy Text", name: "privacy_text", widget: "string" }
+              - { label: "Frequency Text", name: "frequency_text", widget: "string" }
