@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Events Calendar | LMU Entrepreneurship Society</title>
+  <title>{} | LMU Entrepreneurship Society</title>
   <link rel="icon" type="image/png" href="/assets/images/logo-transparent.png">
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Events Calendar | LMU Entrepreneurship Society</title>
+<title>{} | LMU Entrepreneurship Society</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Events Calendar" />
+<meta property="og:title" content="{}" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Empowering student entrepreneurs at Loyola Marymount University" />
 <meta property="og:description" content="Empowering student entrepreneurs at Loyola Marymount University" />
@@ -17,9 +17,9 @@
 <meta property="og:site_name" content="LMU Entrepreneurship Society" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Events Calendar" />
+<meta property="twitter:title" content="{}" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Empowering student entrepreneurs at Loyola Marymount University","headline":"Events Calendar","url":"https://lmu-entrepreneurship-society.github.io/calendar/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Empowering student entrepreneurs at Loyola Marymount University","headline":"{}","url":"https://lmu-entrepreneurship-society.github.io/calendar/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,12 +83,16 @@
   <!-- Page Content -->
   <div class="page-content">
     <div class="page-container">
-      <h1 class="page-title">Events Calendar</h1>
-      <div style="background: rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; backdrop-filter: blur(10px);">
-  <h2 style="color: #fff; margin-bottom: 1rem; text-align: center;"> Stay Connected with us!</h2>
+      <h1 class="page-title">{}</h1>
+      
+
+
+<div style="background: rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; backdrop-filter: blur(10px);">
+  <h2 style="color: #fff; margin-bottom: 1rem; text-align: center;">Stay Connected with us!</h2>
   <p style="color: rgba(255, 255, 255, 0.9); text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">
     Stay up to date with all ES events - subscribe to our calendar.
   </p>
+  
   
   <!-- Embedded Google Calendar -->
   <div style="text-align: center; margin-bottom: 2rem;">
@@ -101,6 +105,15 @@
       scrolling="no">
     </iframe>
   </div>
+  
+
+  
+  <!-- Subscribe Section -->
+  <div style="text-align: center;">
+    <h3 style="color: #fff; margin-bottom: 1rem;">📲 Subscribe to Our Calendar</h3>
+    <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1.5rem;">
+      Never miss an event! Add our calendar to your phone or computer.
+    </p>
     
     <button 
       id="subscribeBtn" 
@@ -126,34 +139,30 @@
       Subscribe to Calendar
     </button>
   </div>
+  
 </div>
+
 
 <script>
 function handleCalendarSubscribe() {
   const googleCalendarUrl = 'https://calendar.google.com/calendar/r?cid=7b70d6686889d8da21dd6038fae854cae18698321b76b031f7c5f82fe4f3758e%40group.calendar.google.com';
   const appleCalendarUrl = 'https://calendar.google.com/calendar/ical/7b70d6686889d8da21dd6038fae854cae18698321b76b031f7c5f82fe4f3758e%40group.calendar.google.com/public/basic.ics';
   
-  // Detect if user is on mobile
   const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
   
   if (isMobile) {
-    // Check if iOS (prioritize Apple Calendar)
     const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
     
     if (isIOS) {
-      // Try Apple Calendar first
       window.open(appleCalendarUrl, '_blank');
     } else {
-      // Android - go to Google Calendar
       window.open(googleCalendarUrl, '_blank');
     }
   } else {
-    // Desktop - go to Google Calendar
     window.open(googleCalendarUrl, '_blank');
   }
 }
 </script>
-
     </div>
   </div>
 
