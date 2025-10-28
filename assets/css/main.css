@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-family: 'Poppins', Arial, 'Times New Roman', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
   color: #fff;
   overflow-x: hidden;
   background: #000;
@@ -407,9 +407,26 @@ body {
     line-height: 1.2;
     word-wrap: break-word;
     padding: 0 1rem;
-    max-width: 100%;
+    max-width: calc(100vw - 2rem);
     overflow-wrap: break-word;
     hyphens: auto;
+  }
+
+  #typewriter-title {
+    white-space: normal;
+    border-right: none;
+    animation: none;
+    text-align: center;
+    padding: 0 1rem;
+    max-width: calc(100vw - 2rem);
+    overflow-wrap: break-word;
+  }
+
+  .nav-title {
+    white-space: normal;
+    font-size: 1.1rem;
+    overflow-wrap: break-word;
+    max-width: calc(100vw - 100px);
   }
 
   .social-links {

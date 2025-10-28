@@ -48,3 +48,51 @@ collections:
           - { label: "Desktop Image", name: "image", widget: "image" }
           - { label: "Mobile Image", name: "mobile_image", widget: "image", required: false, hint: "Optional mobile-optimized version" }
           - { label: "Alt Text", name: "alt", widget: "string" }
+
+  # Pages
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "Calendar Page"
+        name: "calendar"
+        file: "calendar.html"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Title", name: "title", widget: "string", default: "Events Calendar" }
+          - { label: "Page Content", name: "body", widget: "markdown", hint: "Content that appears below the title" }
+      
+      - label: "How to Join Page"
+        name: "join"
+        file: "join.html"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Title", name: "title", widget: "string", default: "How to Join" }
+          - { label: "Page Content", name: "body", widget: "markdown", hint: "Content that appears below the title" }
+      
+      - label: "About Us Page"
+        name: "about"
+        file: "about.html"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Title", name: "title", widget: "string", default: "About Us" }
+          - { label: "Mission Statement", name: "mission", widget: "text", hint: "The main mission/purpose statement" }
+          - label: "E-Board Members"
+            name: "eboard"
+            widget: "list"
+            allow_add: true
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Position", name: "position", widget: "string" }
+              - { label: "Bio", name: "bio", widget: "text", required: false }
+              - { label: "Photo", name: "photo", widget: "image", required: false }
+              - { label: "Email", name: "email", widget: "string", required: false }
+              - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+          - { label: "Additional Content", name: "body", widget: "markdown", hint: "Any additional content below the e-board section" }
+      
+      - label: "Newsletter Page"
+        name: "newsletter"
+        file: "newsletter.html"
+        fields:
+          - { label: "Layout", name: "layout", widget: "hidden", default: "page" }
+          - { label: "Title", name: "title", widget: "string", default: "Newsletter Signup" }
+          - { label: "Page Content", name: "body", widget: "markdown", hint: "Content that appears above the signup form" }
