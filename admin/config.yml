@@ -12,6 +12,12 @@ publish_mode: editorial_workflow
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
+# Media library organization
+media_library:
+  name: folder
+  config:
+    folder: "assets/images"
+
 # Collections define the content structure
 collections:
   # Site Settings
@@ -45,8 +51,8 @@ collections:
         widget: "list"
         allow_add: true
         fields:
-          - { label: "Desktop Image", name: "image", widget: "image" }
-          - { label: "Mobile Image", name: "mobile_image", widget: "image", required: false, hint: "Optional mobile-optimized version" }
+          - { label: "Desktop Image", name: "image", widget: "image", hint: "Upload to assets/images/desktop/ folder" }
+          - { label: "Mobile Image", name: "mobile_image", widget: "image", required: false, hint: "Upload to assets/images/mobile/ folder (optional)" }
           - { label: "Alt Text", name: "alt", widget: "string" }
 
   # Calendar Page
