@@ -78,7 +78,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Show Calendar", name: "enabled", widget: "boolean", default: true }
-              - { label: "Calendar Embed URL", name: "calendar_embed_url", widget: "string", hint: "Google Calendar embed URL" }
+              - { label: "Calendar Embed Code", name: "calendar_embed_url", widget: "text", hint: "Paste the full iframe code from Google Calendar embed OR just the src URL" }
           
           - label: "Subscribe Section"
             name: "subscribe"
