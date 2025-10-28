@@ -1,0 +1,16 @@
+- Get logo on tab preview in browser
+- Fix mobile title (it extends past the sides of the phone screen). Also happens on desktop when website isn't fullscreen. 
+	- PROMPT FOR CLAUDE in file "fix title"
+- The p's and y's in the title also get cut off. Needs a fix.
+- Change font to a mix of Arial, Times new roman condensed, and poppins
+- Integrate color palette (#00327d blue, e5e2d9 white, 7d0000 red, fbb03b yellow, 000000 black... 272727 for background)
+- Add following buttons with Sveltia:
+	- See our events Calendar (new page w/ embedded google calendar and subscribe button below- subscribe button will use a cloudflare worker to determine if person is on desktop -> google calendar, or on mobile, prioritize apple calendar and if apple calendar is not present, go to google calendar link...)
+		- Google calendar: [https://calendar.google.com/calendar/r?cid=7b70d6686889d8da21dd6038fae854cae18698321b76b031f7c5f82fe4f3758e%40group.calendar.google.com](https://calendar.google.com/calendar/r?cid=7b70d6686889d8da21dd6038fae854cae18698321b76b031f7c5f82fe4f3758e%40group.calendar.google.com)
+		- Apple calendar: [https://calendar.google.com/calendar/ical/7b70d6686889d8da21dd6038fae854cae18698321b76b031f7c5f82fe4f3758e%40group.calendar.google.com/public/basic.ics](https://calendar.google.com/calendar/ical/7b70d6686889d8da21dd6038fae854cae18698321b76b031f7c5f82fe4f3758e%40group.calendar.google.com/public/basic.ics)
+	- Linkedin (https://www.linkedin.com/company/lmu-entrepreneurship-society/posts/?feedView=all) simple redirect
+	- Instagram (https://www.linkedin.com/company/lmu-entrepreneurship-society/posts/?feedView=all) simple redirect
+	- "How to join" page w/ editable text from Sveltia CMS... will be primarily text that I will put in plus a button to LEO and a button to subscribe to our newsletter w/ mailchimp (new page, maintain header bar)
+	- About us w/ cards each e-board member can use, editable w/ sveltia (new page, maintain header bar)
+	- Contact us that takes you to mailto: lmuentrepreneurshipsociety@gmail.com (simple redirect)
+Order of buttons TBD ^

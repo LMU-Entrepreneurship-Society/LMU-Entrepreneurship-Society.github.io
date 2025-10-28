@@ -58,7 +58,7 @@ collections:
   # Calendar Page
   - name: "calendar_page"
     label: "📅 Calendar Page"
-    file: "_data/calendar_page.yml"
+    file: "calendar-content.md"
     fields:
       - { label: "Page Title", name: "page_title", widget: "string" }
       
@@ -91,7 +91,7 @@ collections:
   # How to Join Page
   - name: "join_page"
     label: "🚀 How to Join Page"
-    file: "_data/join_page.yml"
+    file: "join-content.md"
     fields:
       - { label: "Page Title", name: "page_title", widget: "string" }
       
@@ -148,7 +148,7 @@ collections:
   # About Us Page
   - name: "about_page"
     label: "👥 About Us Page"
-    file: "_data/about_page.yml"
+    file: "about-content.md"
     fields:
       - { label: "Page Title", name: "page_title", widget: "string" }
       
@@ -207,7 +207,7 @@ collections:
   # Newsletter Page
   - name: "newsletter_page"
     label: "📬 Newsletter Page"
-    file: "_data/newsletter_page.yml"
+    file: "newsletter-content.md"
     fields:
       - { label: "Page Title", name: "page_title", widget: "string" }
       
