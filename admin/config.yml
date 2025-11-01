@@ -5,8 +5,8 @@ backend:
   base_url: https://lmu-es-cms-auth.lmuentrepreneurshipsociety.workers.dev
   auth_endpoint: auth
 
-# Publish mode - editorial workflow gives you drafts
-publish_mode: editorial_workflow
+# Publish mode - simple mode publishes changes immediately
+# publish_mode: editorial_workflow
 
 # Media files configuration
 media_folder: "assets/images"

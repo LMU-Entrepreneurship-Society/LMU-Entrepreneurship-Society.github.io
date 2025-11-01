@@ -1,6 +1,4 @@
-/* ============================
-   RESET & BASE STYLES
-   ============================ */
+/* Reset & Base Styles */
 * {
   margin: 0;
   padding: 0;
@@ -14,9 +12,7 @@ body {
   background: #000;
 }
 
-/* ============================
-   BACKGROUND SLIDESHOW
-   ============================ */
+/* Background Slideshow */
 .slideshow-container {
   position: fixed;
   top: 0;
@@ -56,9 +52,7 @@ body {
   z-index: 1;
 }
 
-/* ============================
-   TOP NAVIGATION BAR
-   ============================ */
+/* Top Navigation Bar */
 .top-nav {
   position: fixed;
   top: 0;
@@ -164,7 +158,6 @@ body {
   transform: scale(1.1);
 }
 
-/* Font Awesome Social Media Icons */
 .icon-instagram::before {
   font-family: "Font Awesome 6 Brands";
   content: "\f16d";
@@ -202,7 +195,6 @@ body {
   font-style: normal;
 }
 
-/* Individual icon colors (use brand colors) */
 .icon-instagram::before { color: #E4405F; }
 .icon-linkedin::before { color: #0077B5; }
 .icon-email::before { color: #EA4335; }
@@ -211,7 +203,6 @@ body {
 .icon-github::before { color: #ffffff; }
 .icon-youtube::before { color: #FF0000; }
 
-/* Hover colors - slightly lighter */
 .social-link:hover .icon-instagram::before { color: #F56476; }
 .social-link:hover .icon-linkedin::before { color: #0A8CD2; }
 .social-link:hover .icon-email::before { color: #F4685E; }
@@ -220,9 +211,7 @@ body {
 .social-link:hover .icon-github::before { color: #f0f0f0; }
 .social-link:hover .icon-youtube::before { color: #FF3333; }
 
-/* ============================
-   ACTION BUTTONS SECTION
-   ============================ */
+/* Action Buttons Section */
 .action-buttons-section {
   background: rgba(39, 39, 39, 0.8);
   min-height: 100vh;
@@ -286,9 +275,7 @@ body {
   opacity: 0.9;
 }
 
-/* ============================
-   PREVIEW IMAGE AREA
-   ============================ */
+/* Preview Image Area */
 .preview-image-container {
   width: 800px;
   height: 800px;
@@ -316,9 +303,7 @@ body {
   opacity: 1;
 }
 
-/* ============================
-   MAIN CONTENT
-   ============================ */
+/* Main Content */
 .main-content {
   position: relative;
   z-index: 10;
@@ -345,9 +330,7 @@ body {
   margin-bottom: 2rem;
 }
 
-/* ============================
-   TYPEWRITER ANIMATION
-   ============================ */
+/* Typewriter Animation */
 #typewriter-title {
   overflow: hidden;
   border-right: 3px solid rgba(255, 255, 255, 0.8);
@@ -367,9 +350,7 @@ body {
   50% { border-color: rgba(255, 255, 255, 0.8) }
 }
 
-/* ============================
-   RESPONSIVE
-   ============================ */
+/* Responsive */
 @media (max-width: 768px) {
   .top-nav {
     display: none;
