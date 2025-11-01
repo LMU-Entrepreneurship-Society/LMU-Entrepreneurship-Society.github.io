@@ -68,6 +68,7 @@ collections:
           - label: "Hero Section"
             name: "hero"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - { label: "Main Heading", name: "heading", widget: "string" }
@@ -76,6 +77,7 @@ collections:
           - label: "Calendar Section"
             name: "calendar"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Calendar", name: "enabled", widget: "boolean", default: true }
               - { label: "Calendar Embed Code", name: "calendar_embed_url", widget: "text", hint: "Paste the full iframe code from Google Calendar embed OR just the src URL" }
@@ -83,6 +85,7 @@ collections:
           - label: "Subscribe Section"
             name: "subscribe"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - { label: "Section Heading", name: "heading", widget: "string" }
@@ -100,6 +103,7 @@ collections:
           - label: "Hero Section"
             name: "hero"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - { label: "Main Heading", name: "heading", widget: "string" }
@@ -108,6 +112,7 @@ collections:
           - label: "Steps Section"
             name: "steps"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - label: "Steps"
@@ -126,6 +131,7 @@ collections:
           - label: "Benefits Section"
             name: "benefits"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - { label: "Section Heading", name: "heading", widget: "string" }
@@ -141,6 +147,7 @@ collections:
           - label: "Contact Section"
             name: "contact"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - { label: "Section Heading", name: "heading", widget: "string" }
@@ -156,6 +163,7 @@ collections:
           - label: "Mission Section"
             name: "mission"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - { label: "Section Heading", name: "heading", widget: "string" }
@@ -164,6 +172,7 @@ collections:
           - label: "Executive Board Section"
             name: "eboard"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - { label: "Section Heading", name: "heading", widget: "string" }
@@ -183,6 +192,7 @@ collections:
           - label: "Activities Section"
             name: "activities"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - { label: "Section Heading", name: "heading", widget: "string" }
@@ -198,6 +208,7 @@ collections:
           - label: "Contact Section"
             name: "contact"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - { label: "Section Heading", name: "heading", widget: "string" }
@@ -214,6 +225,7 @@ collections:
           - label: "Hero Section"
             name: "hero"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - { label: "Main Heading", name: "heading", widget: "string" }
@@ -222,6 +234,7 @@ collections:
           - label: "Benefits Section"
             name: "benefits"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - label: "Benefits"
@@ -236,6 +249,7 @@ collections:
           - label: "Form Section"
             name: "form"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Form", name: "enabled", widget: "boolean", default: true }
               - { label: "Mailchimp Action URL", name: "mailchimp_action", widget: "string" }
@@ -244,6 +258,7 @@ collections:
           - label: "Footer Section"
             name: "footer"
             widget: "object"
+            required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
               - { label: "Privacy Text", name: "privacy_text", widget: "string" }
