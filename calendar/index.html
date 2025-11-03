@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calendar | LMU Entrepreneurship Society</title>
+  <title>ES Event Calendar | LMU Entrepreneurship Society</title>
   <link rel="icon" type="image/png" href="/assets/images/logo-transparent.png">
   <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Calendar | LMU Entrepreneurship Society</title>
+<title>ES Event Calendar | LMU Entrepreneurship Society</title>
 <meta name="generator" content="Jekyll v4.4.1" />
-<meta property="og:title" content="Calendar" />
+<meta property="og:title" content="ES Event Calendar" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Empowering student entrepreneurs at Loyola Marymount University" />
 <meta property="og:description" content="Empowering student entrepreneurs at Loyola Marymount University" />
@@ -17,9 +17,9 @@
 <meta property="og:site_name" content="LMU Entrepreneurship Society" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Calendar" />
+<meta property="twitter:title" content="ES Event Calendar" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Empowering student entrepreneurs at Loyola Marymount University","headline":"Calendar","url":"https://lmu-entrepreneurship-society.github.io/calendar/"}</script>
+{"@context":"https://schema.org","@type":"WebPage","description":"Empowering student entrepreneurs at Loyola Marymount University","headline":"ES Event Calendar","url":"https://lmu-entrepreneurship-society.github.io/calendar/"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,12 +79,61 @@
   <!-- Page Content -->
   <div class="page-content">
     <div class="page-container">
-      
-        <h1 class="page-title">ES Event Calendar</h1>
-      
+      <h1 class="page-title">ES Event Calendar</h1>
       
 
+<div style="background: rgba(255, 255, 255, 0.1); border-radius: 15px; padding: 2rem; margin-bottom: 2rem; backdrop-filter: blur(10px);">
+  
+  
+  
+  
+  <!-- Embedded Google Calendar -->
+  <div style="text-align: center; margin-bottom: 2rem;">
+    
+      <!-- Full iframe HTML provided -->
+      <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=America%2FLos_Angeles&showTitle=0&showPrint=0&showCalendars=0&src=N2I3MGQ2Njg2ODg5ZDhkYTIxZGQ2MDM4ZmFlODU0Y2FlMTg2OTgzMjFiNzZiMDMxZjdjNWY4MmZlNGYzNzU4ZUBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233f51b5" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    
+  </div>
+  
 
+  
+  <!-- Subscribe Section -->
+  <div style="text-align: center;">
+    
+    <h3 style="color: #fff; margin-bottom: 1rem;"></h3>
+    
+    
+    <p style="color: rgba(255, 255, 255, 0.8); margin-bottom: 1.5rem;">
+      Integrate our calendar seamlessly with yours- with automatic updates so you never miss an ES opportunity.
+    </p>
+    
+    
+    <button 
+      id="subscribeBtn" 
+      onclick="handleCalendarSubscribe()" 
+      style="
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1));
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 12px;
+        color: white;
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        backdrop-filter: blur(10px);
+        text-decoration: none;
+        display: inline-block;
+      "
+      onmouseover="this.style.background='linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.15))'; this.style.transform='scale(1.05)';"
+      onmouseout="this.style.background='linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.1))'; this.style.transform='scale(1)';"
+    >
+      <i class="fas fa-calendar-plus" style="margin-right: 0.5rem;"></i>
+      Subscribe to our Calendar!
+    </button>
+  </div>
+  
+</div>
 
 <script>
 function handleCalendarSubscribe() {
