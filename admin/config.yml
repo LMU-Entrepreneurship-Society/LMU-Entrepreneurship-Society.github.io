@@ -28,14 +28,14 @@ collections:
         name: "general"
         file: "_data/settings.yml"
         fields:
-          - { label: "Site Title", name: "site_title", widget: "string" }
-          - { label: "Tagline", name: "tagline", widget: "string" }
-          - { label: "Slideshow Transition Speed (ms)", name: "slideshow_transition_speed", widget: "number", default: 3000, value_type: "int" }
+          - { label: "Site Title", name: "site_title", widget: "string", required: false }
+          - { label: "Tagline", name: "tagline", widget: "string", required: false }
+          - { label: "Slideshow Transition Speed (ms)", name: "slideshow_transition_speed", widget: "number", required: false, default: 3000, value_type: "int" }
           - label: "Action Buttons"
             name: "action_buttons"
             widget: "list"
             fields:
-              - { label: "Button Title", name: "title", widget: "string" }
+              - { label: "Button Title", name: "title", widget: "string", required: false }
               - { label: "Action ID", name: "action", widget: "string", hint: "Unique identifier for this button (used for functionality)" }
               - { label: "Button URL", name: "url", widget: "string", required: false, hint: "Link destination when button is clicked" }
               - { label: "Button Icon", name: "icon", widget: "select", options: ["users", "calendar", "book", "handshake", "star", "envelope", "home", "info", "heart", "rocket"], required: false, hint: "Font Awesome icon for the button" }
@@ -53,7 +53,7 @@ collections:
         fields:
           - { label: "Desktop Image", name: "image", widget: "image", hint: "Upload to assets/images/desktop/ folder" }
           - { label: "Mobile Image", name: "mobile_image", widget: "image", required: false, hint: "Upload to assets/images/mobile/ folder (optional)" }
-          - { label: "Alt Text", name: "alt", widget: "string" }
+          - { label: "Alt Text", name: "alt", widget: "string", required: false }
 
   # Page Content
   - name: "pages"
@@ -63,7 +63,7 @@ collections:
         name: "calendar"
         file: "_data/calendar_page.yml"
         fields:
-          - { label: "Page Title", name: "page_title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string", required: false }
           
           - label: "Hero Section"
             name: "hero"
@@ -71,8 +71,8 @@ collections:
             required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-              - { label: "Main Heading", name: "heading", widget: "string" }
-              - { label: "Description Text", name: "description", widget: "text" }
+              - { label: "Main Heading", name: "heading", widget: "string", required: false }
+              - { label: "Description Text", name: "description", widget: "text", required: false }
           
           - label: "Calendar Section"
             name: "calendar"
@@ -80,7 +80,7 @@ collections:
             required: false
             fields:
               - { label: "Show Calendar", name: "enabled", widget: "boolean", default: true }
-              - { label: "Calendar Embed Code", name: "calendar_embed_url", widget: "text", hint: "Paste the full iframe code from Google Calendar embed OR just the src URL" }
+              - { label: "Calendar Embed Code", name: "calendar_embed_url", widget: "text", required: false, hint: "Paste the full iframe code from Google Calendar embed OR just the src URL" }
           
           - label: "Subscribe Section"
             name: "subscribe"
@@ -88,17 +88,17 @@ collections:
             required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-              - { label: "Section Heading", name: "heading", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Button Text", name: "button_text", widget: "string" }
-              - { label: "Google Calendar URL", name: "google_calendar_url", widget: "string" }
-              - { label: "Apple Calendar URL", name: "apple_calendar_url", widget: "string" }
+              - { label: "Section Heading", name: "heading", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Button Text", name: "button_text", widget: "string", required: false }
+              - { label: "Google Calendar URL", name: "google_calendar_url", widget: "string", required: false }
+              - { label: "Apple Calendar URL", name: "apple_calendar_url", widget: "string", required: false }
 
       - label: "🚀 How to Join Page"
         name: "join"
         file: "_data/join_page.yml"
         fields:
-          - { label: "Page Title", name: "page_title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string", required: false }
           
           - label: "Hero Section"
             name: "hero"
@@ -106,8 +106,8 @@ collections:
             required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-              - { label: "Main Heading", name: "heading", widget: "string" }
-              - { label: "Description Text", name: "description", widget: "text" }
+              - { label: "Main Heading", name: "heading", widget: "string", required: false }
+              - { label: "Description Text", name: "description", widget: "text", required: false }
           
           - label: "Steps Section"
             name: "steps"
@@ -120,12 +120,12 @@ collections:
                 widget: "list"
                 allow_add: true
                 fields:
-                  - { label: "Step Number", name: "step_number", widget: "number", value_type: "int" }
-                  - { label: "Icon/Emoji", name: "icon", widget: "string" }
-                  - { label: "Step Title", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
-                  - { label: "Button Text", name: "button_text", widget: "string" }
-                  - { label: "Button URL", name: "button_url", widget: "string" }
+                  - { label: "Step Number", name: "step_number", widget: "number", required: false, value_type: "int" }
+                  - { label: "Icon/Emoji", name: "icon", widget: "string", required: false }
+                  - { label: "Step Title", name: "title", widget: "string", required: false }
+                  - { label: "Description", name: "description", widget: "text", required: false }
+                  - { label: "Button Text", name: "button_text", widget: "string", required: false }
+                  - { label: "Button URL", name: "button_url", widget: "string", required: false }
                   - { label: "Button Color", name: "button_color", widget: "string", hint: "CSS gradient or color" }
           
           - label: "Benefits Section"
@@ -134,15 +134,15 @@ collections:
             required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-              - { label: "Section Heading", name: "heading", widget: "string" }
+              - { label: "Section Heading", name: "heading", widget: "string", required: false }
               - label: "Benefits"
                 name: "items"
                 widget: "list"
                 allow_add: true
                 fields:
-                  - { label: "Icon/Emoji", name: "icon", widget: "string" }
-                  - { label: "Benefit Title", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Icon/Emoji", name: "icon", widget: "string", required: false }
+                  - { label: "Benefit Title", name: "title", widget: "string", required: false }
+                  - { label: "Description", name: "description", widget: "text", required: false }
           
           - label: "Contact Section"
             name: "contact"
@@ -150,15 +150,15 @@ collections:
             required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-              - { label: "Section Heading", name: "heading", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Email Address", name: "email", widget: "string" }
+              - { label: "Section Heading", name: "heading", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Email Address", name: "email", widget: "string", required: false }
 
       - label: "👥 About Us Page"
         name: "about"
         file: "_data/about_page.yml"
         fields:
-          - { label: "Page Title", name: "page_title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string", required: false }
           
           - label: "Mission Section"
             name: "mission"
@@ -166,8 +166,8 @@ collections:
             required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-              - { label: "Section Heading", name: "heading", widget: "string" }
-              - { label: "Mission Statement", name: "statement", widget: "text" }
+              - { label: "Section Heading", name: "heading", widget: "string", required: false }
+              - { label: "Mission Statement", name: "statement", widget: "text", required: false }
           
           - label: "Executive Board Section"
             name: "eboard"
@@ -175,14 +175,14 @@ collections:
             required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-              - { label: "Section Heading", name: "heading", widget: "string" }
+              - { label: "Section Heading", name: "heading", widget: "string", required: false }
               - label: "Board Members"
                 name: "members"
                 widget: "list"
                 allow_add: true
                 fields:
-                  - { label: "Name", name: "name", widget: "string" }
-                  - { label: "Position", name: "position", widget: "string" }
+                  - { label: "Name", name: "name", widget: "string", required: false }
+                  - { label: "Position", name: "position", widget: "string", required: false }
                   - { label: "Bio", name: "bio", widget: "text", required: false }
                   - { label: "Photo", name: "photo", widget: "image", required: false }
                   - { label: "Email", name: "email", widget: "string", required: false }
@@ -195,15 +195,15 @@ collections:
             required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-              - { label: "Section Heading", name: "heading", widget: "string" }
+              - { label: "Section Heading", name: "heading", widget: "string", required: false }
               - label: "Activities"
                 name: "items"
                 widget: "list"
                 allow_add: true
                 fields:
-                  - { label: "Icon/Emoji", name: "icon", widget: "string" }
-                  - { label: "Activity Title", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Icon/Emoji", name: "icon", widget: "string", required: false }
+                  - { label: "Activity Title", name: "title", widget: "string", required: false }
+                  - { label: "Description", name: "description", widget: "text", required: false }
           
           - label: "Contact Section"
             name: "contact"
@@ -211,16 +211,40 @@ collections:
             required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-              - { label: "Section Heading", name: "heading", widget: "string" }
-              - { label: "Description", name: "description", widget: "text" }
-              - { label: "Email Address", name: "email", widget: "string" }
-              - { label: "Button Text", name: "button_text", widget: "string" }
+              - { label: "Section Heading", name: "heading", widget: "string", required: false }
+              - { label: "Description", name: "description", widget: "text", required: false }
+              - { label: "Email Address", name: "email", widget: "string", required: false }
+              - { label: "Button Text", name: "button_text", widget: "string", required: false }
+
+      - label: "🏠 Homepage"
+        name: "homepage"
+        file: "_data/homepage.yml"
+        fields:
+          - { label: "Page Title", name: "page_title", widget: "string", required: false, hint: "Used for browser tab title" }
+          
+          - label: "Hero Section"
+            name: "hero"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Show Hero Section", name: "enabled", widget: "boolean", default: true }
+              - { label: "Main Title", name: "title", widget: "string", required: false, hint: "Displays with typewriter animation" }
+              - { label: "Tagline", name: "tagline", widget: "string", required: false, hint: "Subtitle below the main title" }
+              - { label: "Title Animation Speed (ms)", name: "animation_speed", widget: "number", required: false, default: 3500, value_type: "int", hint: "How fast the typewriter effect types" }
+          
+          - label: "Action Buttons Section"
+            name: "action_buttons"
+            widget: "object"
+            required: false
+            fields:
+              - { label: "Show Action Buttons", name: "enabled", widget: "boolean", default: true }
+              - { label: "Section Background Color", name: "background_color", widget: "string", required: false, hint: "CSS color value (e.g., rgba(39, 39, 39, 0.8))" }
 
       - label: "📬 Newsletter Page"
         name: "newsletter"
         file: "_data/newsletter_page.yml"
         fields:
-          - { label: "Page Title", name: "page_title", widget: "string" }
+          - { label: "Page Title", name: "page_title", widget: "string", required: false }
           
           - label: "Hero Section"
             name: "hero"
@@ -228,8 +252,8 @@ collections:
             required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-              - { label: "Main Heading", name: "heading", widget: "string" }
-              - { label: "Description Text", name: "description", widget: "text" }
+              - { label: "Main Heading", name: "heading", widget: "string", required: false }
+              - { label: "Description Text", name: "description", widget: "text", required: false }
           
           - label: "Benefits Section"
             name: "benefits"
@@ -242,9 +266,9 @@ collections:
                 widget: "list"
                 allow_add: true
                 fields:
-                  - { label: "Icon/Emoji", name: "icon", widget: "string" }
-                  - { label: "Benefit Title", name: "title", widget: "string" }
-                  - { label: "Description", name: "description", widget: "text" }
+                  - { label: "Icon/Emoji", name: "icon", widget: "string", required: false }
+                  - { label: "Benefit Title", name: "title", widget: "string", required: false }
+                  - { label: "Description", name: "description", widget: "text", required: false }
           
           - label: "Form Section"
             name: "form"
@@ -252,8 +276,8 @@ collections:
             required: false
             fields:
               - { label: "Show Form", name: "enabled", widget: "boolean", default: true }
-              - { label: "Mailchimp Action URL", name: "mailchimp_action", widget: "string" }
-              - { label: "Form Title", name: "form_title", widget: "string" }
+              - { label: "Mailchimp Action URL", name: "mailchimp_action", widget: "string", required: false }
+              - { label: "Form Title", name: "form_title", widget: "string", required: false }
           
           - label: "Footer Section"
             name: "footer"
@@ -261,5 +285,5 @@ collections:
             required: false
             fields:
               - { label: "Show Section", name: "enabled", widget: "boolean", default: true }
-              - { label: "Privacy Text", name: "privacy_text", widget: "string" }
-              - { label: "Frequency Text", name: "frequency_text", widget: "string" }
+              - { label: "Privacy Text", name: "privacy_text", widget: "string", required: false }
+              - { label: "Frequency Text", name: "frequency_text", widget: "string", required: false }
