@@ -390,7 +390,10 @@ body {
     padding: 0 1rem;
     max-width: calc(100vw - 2rem);
     overflow-wrap: break-word;
+    word-break: break-word;
     hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
   }
 
   #typewriter-title {
@@ -401,12 +404,20 @@ body {
     padding: 0 1rem;
     max-width: calc(100vw - 2rem);
     overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
   }
 
   .nav-title {
     white-space: normal;
     font-size: 1.1rem;
     overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
     max-width: calc(100vw - 100px);
   }
 
