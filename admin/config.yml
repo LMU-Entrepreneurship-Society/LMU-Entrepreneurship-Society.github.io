@@ -36,7 +36,7 @@ collections:
             widget: "list"
             fields:
               - { label: "Button Title", name: "title", widget: "string", required: false }
-              - { label: "Action ID", name: "action", widget: "string", hint: "Unique identifier for this button (used for functionality)" }
+              - { label: "Action ID", name: "action", widget: "string", required: false, hint: "Unique identifier for this button (used for functionality)" }
               - { label: "Button URL", name: "url", widget: "string", required: false, hint: "Link destination when button is clicked" }
               - { label: "Button Icon", name: "icon", widget: "select", options: ["users", "calendar", "book", "handshake", "star", "envelope", "home", "info", "heart", "rocket"], required: false, hint: "Font Awesome icon for the button" }
               - { label: "Preview Image", name: "preview_image", widget: "image", required: false, hint: "Image that appears on hover" }
@@ -51,7 +51,7 @@ collections:
         widget: "list"
         allow_add: true
         fields:
-          - { label: "Desktop Image", name: "image", widget: "image", hint: "Upload to assets/images/desktop/ folder" }
+          - { label: "Desktop Image", name: "image", widget: "image", required: false, hint: "Upload to assets/images/desktop/ folder" }
           - { label: "Mobile Image", name: "mobile_image", widget: "image", required: false, hint: "Upload to assets/images/mobile/ folder (optional)" }
           - { label: "Alt Text", name: "alt", widget: "string", required: false }
 
@@ -126,7 +126,7 @@ collections:
                   - { label: "Description", name: "description", widget: "text", required: false }
                   - { label: "Button Text", name: "button_text", widget: "string", required: false }
                   - { label: "Button URL", name: "button_url", widget: "string", required: false }
-                  - { label: "Button Color", name: "button_color", widget: "string", hint: "CSS gradient or color" }
+                  - { label: "Button Color", name: "button_color", widget: "string", required: false, hint: "CSS gradient or color" }
           
           - label: "Benefits Section"
             name: "benefits"
@@ -187,7 +187,7 @@ collections:
                   - { label: "Photo", name: "photo", widget: "image", required: false }
                   - { label: "Email", name: "email", widget: "string", required: false }
                   - { label: "LinkedIn URL", name: "linkedin", widget: "string", required: false }
-                  - { label: "Card Gradient", name: "gradient", widget: "string", hint: "CSS gradient for card background" }
+                  - { label: "Card Gradient", name: "gradient", widget: "string", required: false, hint: "CSS gradient for card background" }
           
           - label: "Activities Section"
             name: "activities"
